@@ -2,162 +2,178 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Facebook</title>
+    <style>
+        * {
+            margin: 0px;
+            padding: 0px;
+        }
+
+        h1 {
+            margin: 230px 0px 0px 150px;
+            font-size: 55px;
+            color: #006eff;
+            font-family: sans-serif;
+        }
+
+        p {
+            font-family: sans-serif;
+            /* margin: 0px 100px 100px 50px; */
+            margin-left: 150px;
+            margin-top: 10px;
+            font-size: 27px;
+        }
+
+        .container1 {
+            /* display: grid    ; */
+            /* margin: 270px 50px 50px 200px; */
+
+        }
+
+        .container2 {
+            display: flex;
+            /* margin-top: -180px; */
+            background-color: #fff;
+            background-color: #fff;
+            border: none;
+            border-radius: 8px;
+            box-shadow: 0 2px 4px rgb(0 0 0 / 10%), 0 8px 16px rgb(0 0 0 / 10%);
+            box-sizing: border-box;
+            margin: -210px 200px -500px 700px;
+            padding: 20px 0 28px;
+            width: 396px;
+            font-family: inherit;
+            padding-bottom: 24px;
+            padding-top: 10px;
+            text-align: center;
+            display: block;
+            height: 350px;
+        }
+
+        .input1 {
+            background: #FFFFFF url(/rsrc.php/v3/yU/r/O7nelmd9XSI.png) repeat-x;
+            border: 2px solid rgb(220, 217, 217);
+            color: #1d2129;
+            height: 30px;
+            width: 332px;
+            line-height: 16px;
+            vertical-align: middle;
+            border-radius: 5px;
+            cursor: pointer;
+            display: inline-block;
+            text-decoration: none;
+            padding: 7px;
+            white-space: nowrap;
+        }
+
+        .input1:focus {
+            border: none;
+        }
+
+        .input2 {
+            padding: 7px;
+            background: #FFFFFF url(/rsrc.php/v3/yU/r/O7nelmd9XSI.png) repeat-x;
+            border: 2px solid #dddfe2;
+            color: #1d2129;
+            height: 30px;
+            width: 332px;
+            line-height: 16px;
+            vertical-align: middle;
+            margin-top: -50px;
+            border-radius: 5px;
+        }
+
+        body {
+            background-color: #f0f2f5;
+        }
+
+        .button1 {
+            background-color: #1877f2;
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            line-height: 48px;
+            font-family: sans-serif;
+            color: #dddfe2;
+            border-radius: 5px;
+            padding: 0 16px;
+            width: 348px;
+        }
+        .button1:hover{
+         background-color: #006eff;
+        }
+
+        .button2 {
+            background-color: #42b72a;
+            border: none;
+            border-radius: 6px;
+            font-size: 20px;
+            line-height: 48px;
+            font-family: sans-serif;
+            color: #dddfe2;
+            border-radius: 5px;
+            padding: 0 16px;
+            width: 220px;
+        }
+        .button2:hover{
+            transform: scale(1.2);
+        }
+
+        a {
+            margin-top: 50px;
+            font-size: 15px;
+            color: #1877f2;
+        }
+
+        hr {
+            width: 280px;
+            margin-left: 60px;
+            margin-top: 20px;
+        }
+
+        .Head-Container {
+            /* text-align: center; */
+            width: 100%;
+            margin-top: 80px;
+            justify-content: center;
+            justify-items: center;
+            justify-self: center;
+
+        }
+
+        .middiv {
+            margin-left: 40px;
+        }
+    </style>
 </head>
-<style>
-    body {
-        background-color: aliceblue;
-        width: 300px;
-    }
-
-
-    form {
-        background-color: rgb(255, 255, 255);
-        position: absolute;
-        width: 370px;
-        height: 270px;
-        padding: 20px 5px 20px 5px;
-        margin: -10vh 850px;
-        border-radius: 5px;
-        box-shadow: 5px 5px 6px -7px;
-
-    }
-
-    input[type=text],
-    input[type=password] {
-        display: block;
-        background-color: white;
-        margin: auto;
-        border: 1.5px solid rgb(200, 200, 200);
-        width: 200px;
-        padding: 10px 40px;
-        border-radius: 5px;
-        text-align: center;
-    }
-
-    button {
-        border: none;
-        background-color: #166fe5;
-        color: white;
-        margin: auto;
-        width: 283px;
-        display: block;
-        border-radius: 5px;
-        padding: 10px 0;
-        font-weight: bold;
-        cursor: pointer;
-    }
-
-    .fd {
-        display: block;
-        width: 200px;
-        margin: auto;
-        color: #166fe5;
-        text-align: center;
-    }
-
-    .nw {
-        width: 180px;
-        font-size: 14px;
-        background-color: #42b72a;
-        text-align: center;
-    }
-
-    .link {
-        width: 400px;
-        position: relative;
-        color: black;
-        padding: 250px 890px;
-       
-
-
-    }
-
-    .link a {
-        color: black;
-        font-weight: bold;
-        font-size: 15px;
-
-    }
-    .logo{
-        width: 350px;
-       margin-left: 290px;
-       margin-top: 30vh;
-       margin-right: 250px;
-
-    }
-    .focu{
- margin-top: 20px;
- padding: 0px 0px 1050px;
-}
-</style>
 
 <body>
-  
+    <div class="Head-Container">
+        <div class="middiv">
 
-
-        <div class="logo"> <img src="https://static.xx.fbcdn.net/rsrc.php/y8/r/dF5SId3UHWd.svg" alt="fb">
-
-            <h3 class="par">Facebook help you connect and share <br> with the people in your life </h3>
-        </div>
-<div class="focu">
-        <form action="facebook">
-
-
-
-            <input type="text" name="fb" id="wh" size="30" placeholder="Email adress or phone number">
-
-
-
-
-            <br>
-
-
-            <td><input type="password" name="fb" id="wh" size="30" placeholder="Password">
-
+            <div class="container1">
+                <h1>facebook</h1>
+                <p>Facebook helps you connect and share <br> with the people in your life</p>
+            </div>
+            <div class="container2">
                 <br>
-                <div class="butt">
+                <input class="input1" type="email" placeholder="Password"><br><br>
+                <br><br>
+                <input class="input2" type="password" placeholder="Email address or phone number">
+                <button class="button1">Log in</button>
+                <br><br>
+                <a href="#">Forgotten password?</a>
 
-                    <button name="fb" id="wh" size="30" input type="submit">
-                        log in
-                    </button>
-
-                </div>
-                <br>
-                <div class="fd">
-
-                    <a href="Forget Pass">Forget Password ?</a>
-
-                </div>
                 <hr>
-                <div>
+                <br>
+                <button class="button2">Create New Account</button>
+            </div>
+            <p style=" margin-left:760px; margin-top:530px;font-size:small;"><a href="Create">Create a page</a> for a celebrity, brand
+                or
+                business.</p>
 
-                    <button class="nw" name="fb" id="wh" size="30" input type="submit">
-                        Create New Account
-                    </button>
-
-                </div>
-
-
-
-
-
-
-        </form>
-        <div class="link">
-
-
-            <p> <a href="Create"> Create a page </a>
-                for a celebrity,brand or business.
-            </p>
         </div>
-
-
     </div>
-
 </body>
 
 </html>
